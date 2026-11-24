@@ -6,17 +6,28 @@
 
 [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL), often simply Postgres, is an [object-relational database](https://en.wikipedia.org/wiki/Object-relational_database) (ORDBMS). PostgreSQL is [ACID-compliant](https://en.wikipedia.org/wiki/ACID) and [transactional](https://en.wikipedia.org/wiki/Transaction_processing). (see more: [wikipedia:PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL), [PostgreSQL.org](https://www.postgresql.org))
 
- :elephant: Contributions welcome. Add links through [pull requests](https://github.com/dhamaniasad/awesome-postgres/pulls) or create an [issue](https://github.com/dhamaniasad/awesome-postgres/issues) to start a discussion. Please take a look at the [contribution guidelines](CONTRIBUTING.md).
+:elephant: Contributions welcome. Add links through [pull requests](https://github.com/dhamaniasad/awesome-postgres/pulls) or create an [issue](https://github.com/dhamaniasad/awesome-postgres/issues) to start a discussion. Please take a look at the [contribution guidelines](CONTRIBUTING.md) and the structured [Diátaxis Documentation Portal](docs/index.md).
+
+## Ecosystem Overview
+
+```mermaid
+flowchart LR
+    Core["PostgreSQL Ecosystem"] --> Infra["HA, Backups & Cloud (HA / Backups / PaaS / Docker / Kubernetes)"]
+    Core --> Dev["Clients, Drivers & Languages (GUI / CLI / Bindings / Extensions)"]
+    Core --> Ops["Observability & Tuning (Monitoring / Optimization / Security / Utilities)"]
+    Core --> Learn["Learning & Community (Tutorials / Docs / Books / Blogs / Podcasts)"]
+```
 
 ## Contents
 
-- [Awesome Postgres](#awesome-postgres-)
+- [Contents](#contents)
     - [High-Availability](#high-availability)
     - [Backups](#backups)
     - [GUI](#gui)
     - [Distributions](#distributions)
     - [CLI](#cli)
     - [Server](#server)
+    - [Security](#security)
     - [Monitoring](#monitoring)
     - [Extensions](#extensions)
     - [Platforms](#platforms)
@@ -30,8 +41,10 @@
 - [Resources](#resources)
     - [Tutorials](#tutorials)
     - [Blogs](#blogs)
+    - [Books](#books)
     - [Documentation](#documentation)
     - [Newsletters](#newsletters)
+    - [Podcasts](#podcasts)
     - [Videos](#videos)
     - [Community](#community)
     - [Roadmaps](#roadmaps)
@@ -210,8 +223,7 @@
 * [PEV2](https://github.com/dalibo/pev2) - Online Postgres Explain Visualizer.
 * [pg_flame](https://github.com/mgartner/pg_flame) - A flamegraph generator for query plans.
 * [PgHero](https://github.com/ankane/pghero) - PostgreSQL insights made easy.
-* [pgMustard](https://www.pgmustard.com/) - A modern user interface
-for `EXPLAIN`, that also provides performance tips (Commercial Software).
+* [pgMustard](https://www.pgmustard.com/) - A modern user interface for `EXPLAIN`, that also provides performance tips (Commercial Software).
 * [pgtune](https://github.com/gregs1104/pgtune/) - PostgreSQL configuration wizard.
 * [pgtune](https://github.com/le0pard/pgtune) - Online version of PostgreSQL configuration wizard.
 * [pgconfig.org](https://github.com/sebastianwebber/pgconfig) - PostgreSQL Online Configuration Tool (also based on pgtune).
